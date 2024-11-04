@@ -151,8 +151,10 @@ public class firstClass {
 
 	}
 	@AfterTest()
-	public void exit() {
+	public void exit() 
+	{System.out.println(driver.getTitle());
 		driver.close();
+	
 	}
 
 }
